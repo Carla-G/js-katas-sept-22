@@ -11,6 +11,13 @@ Don't mutate the parameter.
 
 */
 
+function pascalCase(string) {
+  const words = string.split(" ");
+  const firstLetterUpperCased = words.map(word => word.charAt(0).toUpperCase() + word.substring(1).toLowerCase());
+  const camelCase = firstLetterUpperCased.join("");
+  return camelCase;
+}
+
 // TODO add your code here
 
 // Begin of tests

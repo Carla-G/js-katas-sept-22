@@ -8,6 +8,21 @@ Note: If the number is a multiple of both 3 and 5, only count it once.
 */
 
 // TODO add your code here
+const number = [];
+
+for (let n = 1; n < 11; n++) {
+    if (n % 3 === 0 || n % 5 === 0) {
+        return number.push(n);
+    }
+}
+
+function sum(array) {
+    return array.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
+}
+
+sum(number)
+
+
 
 // Begin of tests
 const assert = require("assert");

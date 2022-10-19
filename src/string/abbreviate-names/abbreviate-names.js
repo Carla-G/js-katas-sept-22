@@ -13,5 +13,17 @@ Add you own tests.
 */
 
 // TODO add your code here
+function abbreviate (name) {
+    const arrayOfLetters = name.split();
+    const lettersUpperCased = arrayOfLetters.map(letter => letter.toUpperCase())
+    let abbreviation = [];
+
+    for(let i = 0; arrayOfLetters.length; i++) {
+        if(arrayOfLetters[i] === lettersUpperCased[i]) {
+            abbreviation.push(arrayOfLetters[i])
+            return abbreviation.join(".");
+        }
+    }
+}
 
 module.exports = abbreviate;

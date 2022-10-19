@@ -18,4 +18,19 @@ Add you own tests.
 
 // TODO add your code here
 
+function countChar(string, character) {
+    const arrayOfLetters = string.split()
+    let count;
+
+    for(let i = 0; i < arrayOfLetters.length; i++) {
+        if(string === null || character === null) {
+            return -1;
+        } else {
+            const filteredArray = arrayOfLetters.filter(letter => letter === character);
+            return count = filteredArray.length;
+        }
+    }
+}
+
+
 module.exports = countChar;
